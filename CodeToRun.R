@@ -104,9 +104,9 @@ units<-Achilles::fetchAchillesAnalysisResults(connectionDetails = connectionDeta
   units2$unit_concept_id <-as.integer(units2$unit_concept_id)
 
 
-#filter only concepts of interest
+#filter only concepts of interest  (uncomment the code below, but best if you export the full measure)
 
-units2 %>% dplyr::filter(measurement_concept_id %in% valueSet)
+#units2 %>% dplyr::filter(measurement_concept_id %in% valueSet)
 
 
 
